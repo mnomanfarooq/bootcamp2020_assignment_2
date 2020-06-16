@@ -39,3 +39,6 @@ jobs:
 
     - name: Deploy to Surge
       run: surge ./build bootcamp2020-assign-2-noman.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      
+    - name: List Surge Domains
+      run: surge list --token ${{ secrets.SURGE_TOKEN }}
